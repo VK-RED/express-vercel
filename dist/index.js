@@ -9,6 +9,7 @@ const PORT = 3000;
 const handler = (req, res) => {
     return res.json({ message: "Hey the F#% your api is working !!" });
 };
+app.get("/", handler);
 app.listen(PORT, () => {
     console.log("App is listening on the PORT : 3000");
 });
