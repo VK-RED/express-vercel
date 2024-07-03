@@ -9,6 +9,8 @@ const handler = (req:Request,res:Response) => {
 
 }
 
+app.get("/",handler);
+
 
 app.listen(PORT,()=>{
     console.log("App is listening on the PORT : 3000");
